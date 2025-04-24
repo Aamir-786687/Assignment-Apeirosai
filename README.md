@@ -2,15 +2,12 @@
 
 ## 📌 Overview
 
-This is a frontend web application built using Vite. It serves as a starter template for modern JavaScript development.
+This is a frontend web application built using React. It serves as a starter template for modern JavaScript development.
 
 ## 🛠️ Tech Stack
 
-# Frontend:  
+### Frontend:  
 React, JavaScript, HTML5, CSS3
-
-# Tooling:  
-ESLint, Git
 
 ## 🚀 Features
 
