@@ -50,8 +50,8 @@ ESLint, Git
 
 │   │   └── 📜 OrderSummary.jsx       # Summary of total price, discounts
 
-        └── 📜 Product.jsx            # Showing products on the Checkout Screen. 
-        
+│   │   └── 📜 Product.jsx            # Showing products on the Checkout Screen. 
+
 └── 📂 public                   # Static assets (optional)
 
 
