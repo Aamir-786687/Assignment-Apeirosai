@@ -57,11 +57,14 @@ ESLint, Git
 
 ## 🛠️ Installation & Setup
 
-# Clone the repository:
+### Clone the repository:
 
 git clone https://github.com/Aamir-786687/Assignment-Apeirosai
+
 cd Assignment-Apeirosai
+
 npm install
+
 npm run dev
 
 ## 🔥 Deployment
