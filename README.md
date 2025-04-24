@@ -23,20 +23,35 @@ ESLint, Git
 
 📦 Assignment-Apeirosai
 ├── 📜 package.json             # Project metadata and dependencies
+
 ├── 📜 vite.config.js           # Vite configuration file 
+
 ├── 📜 index.html               # Root HTML file
+
 ├── 📂 src                      # Source code folder
+
 │   ├── 📜 App.jsx              # Root React component 
+
 │   ├── 📜 index.css            # Global styles
+
 │   ├── 📂 pages
+
 │   │   ├── 📜 CheckoutPage.jsx       # Checkout page layout
+
 │   │   └── 📜 ConfirmationPage.jsx   # Order confirmation screen
+
 │   ├── 📂 components
+
 │   │   ├── 📜 CartItems.jsx          # List of cart items
+
 │   │   ├── 📜 DeliveryDetails.jsx    # Delivery form section
+
 │   │   ├── 📜 PromoCode.jsx          # Promo code input
+
 │   │   └── 📜 OrderSummary.jsx       # Summary of total price, discounts
+
         └── 📜 Product.jsx            # Showing products on the Checkout Screen. 
+        
 └── 📂 public                   # Static assets (optional)
 
 
