@@ -20,37 +20,37 @@ React, JavaScript, HTML5, CSS3
 
 📦 Assignment-Apeirosai
 
-├── 📜 package.json             # Project metadata and dependencies
+├── 📜 package.json            
 
-├── 📜 vite.config.js           # Vite configuration file 
+├── 📜 vite.config.js           
 
-├── 📜 index.html               # Root HTML file
+├── 📜 index.html              
 
-├── 📂 src                      # Source code folder
+├── 📂 src                     
 
-│   ├── 📜 App.jsx              # Root React component 
+│   ├── 📜 App.jsx                    # Root React component 
 
-│   ├── 📜 index.css            # Global styles
+│   ├── 📜 index.css                  # Global styles
 
 │   ├── 📂 pages
 
-│   │   ├── 📜 CheckoutPage.jsx       # Checkout page layout
+│   │   ├── 📜 CheckoutPage.jsx                # Checkout page layout
 
-│   │   └── 📜 ConfirmationPage.jsx   # Order confirmation screen
+│   │   └── 📜 ConfirmationPage.jsx            # Order confirmation screen
 
 │   ├── 📂 components
 
-│   │   ├── 📜 CartItems.jsx          # List of cart items
+│   │   ├── 📜 CartItems.jsx                   # List of cart items
 
-│   │   ├── 📜 DeliveryDetails.jsx    # Delivery form section
+│   │   ├── 📜 DeliveryDetails.jsx             # Delivery form section
 
-│   │   ├── 📜 PromoCode.jsx          # Promo code input
+│   │   ├── 📜 PromoCode.jsx                   # Promo code input
 
-│   │   └── 📜 OrderSummary.jsx       # Summary of total price, discounts
+│   │   └── 📜 OrderSummary.jsx                # Summary of total price, discounts
 
-│   │   └── 📜 Product.jsx            # Showing products on the Checkout Screen. 
+│   │   └── 📜 Product.jsx                     # Showing products on the Checkout Screen. 
 
-└── 📂 public                   # Static assets (optional)
+└── 📂 public                   
 
 
 ## 🛠️ Installation & Setup
