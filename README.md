@@ -19,6 +19,7 @@ React, JavaScript, HTML5, CSS3
 ## 📂 Folder Structure
 
 📦 Assignment-Apeirosai
+
 ├── 📜 package.json             # Project metadata and dependencies
 
 ├── 📜 vite.config.js           # Vite configuration file 
