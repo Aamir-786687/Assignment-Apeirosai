@@ -9,7 +9,7 @@ const OrderSummary = ({
   calculateSubtotal
 }) => {
   const discountAmount = subtotal * (discount / 100);
-  const shippingCharge = cartItems.length === 0 ? 0 : calculateSubtotal() * 0.02;
+  const shippingCharge = cartItems.length === 0 ? 0 : calculateSubtotal() * 0.05;
   const totalAmount = subtotal - discountAmount + shippingCharge;
 
   return (
