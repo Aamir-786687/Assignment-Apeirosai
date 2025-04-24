@@ -73,7 +73,7 @@ const ConfirmationPage = () => {
           <div className="space-y-4">
             {items.map((item) => (
               <div key={item.id} className="flex items-start border-b border-gray-200 pb-4 last:border-b-0">
-                <div className="w-16 h-16 flex-shrink-0">
+                <div className="w-28 h-28 flex-shrink-0">
                   <img 
                     src={item.image} 
                     alt={item.title} 

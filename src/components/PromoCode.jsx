@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Tag, CheckCircle, AlertCircle } from 'lucide-react';
+import { Tag, CheckCircle, AlertCircle, X } from 'lucide-react';
 
 const PromoCode = ({ promoCode, setPromoCode, handleApplyPromo, discount, isLoading }) => {
   const [error, setError] = useState('');
@@ -15,6 +15,13 @@ const PromoCode = ({ promoCode, setPromoCode, handleApplyPromo, discount, isLoad
     setError('');
     handleApplyPromo(promoCode);
   };
+
+  const handleRemovePromo = () => {
+    setPromoCode('');
+    localStorage.removeItem('promoCode');
+    localStorage.removeItem('discount');
+    window.location.reload(); // reload to recalculate discount/total
+  };
   
   return (
     <div className="bg-white rounded-lg shadow-md p-6">
@@ -24,12 +31,17 @@ const PromoCode = ({ promoCode, setPromoCode, handleApplyPromo, discount, isLoad
       </div>
       
       {discount > 0 ? (
-        <div className="mb-4 p-3 bg-green-50 border border-green-200 rounded-md flex items-center">
-          <CheckCircle size={18} className="text-green-500 mr-2" />
-          <div>
-            <p className="text-green-800 font-medium">"{promoCode}" applied!</p>
-            <p className="text-green-600 text-sm">You saved {discount}% on your order</p>
+        <div className="mb-4 p-3 bg-green-50 border border-green-200 rounded-md flex items-center justify-between">
+          <div className="flex items-center">
+            <CheckCircle size={18} className="text-green-500 mr-2" />
+            <div>
+              <p className="text-green-800 font-medium">"{promoCode}" applied!</p>
+              <p className="text-green-600 text-sm">You saved {discount}% on your order</p>
+            </div>
           </div>
+          <button onClick={handleRemovePromo} aria-label="Remove promo">
+            <X size={18} className="text-red-400 hover:text-red-600 transition-colors" />
+          </button>
         </div>
       ) : null}
       
@@ -50,7 +62,7 @@ const PromoCode = ({ promoCode, setPromoCode, handleApplyPromo, discount, isLoad
                 error ? 'border-red-300 focus:border-red-500' : 
                 isFocused ? 'border-teal-300 focus:border-teal-500' : 'border-gray-300'
               } focus:outline-none transition-colors`}
-              disabled={isLoading}
+              disabled={isLoading || discount > 0}
             />
             {error && (
               <div className="flex items-center mt-1 text-red-500 text-sm">

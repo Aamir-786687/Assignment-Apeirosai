@@ -178,13 +178,13 @@ const CheckoutPage = () => {
           />
         </div>
 
-        <div className="lg:col-span-1"> 
+        <div className="lg:col-span-1">
           <OrderSummary
             subtotal={calculateSubtotal()}
-            deliveryFee={DELIVERY_FEE}
             discount={discount}
-            total={calculateTotal()}
             handlePlaceOrder={handlePlaceOrder}
+            cartItems={cartItems}
+            calculateSubtotal={calculateSubtotal}
           />
         </div>
       </div>
